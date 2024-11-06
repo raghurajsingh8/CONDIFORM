@@ -1,0 +1,207 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f9;
+  padding: 20px;
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+  0% {
+    color: black;
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    color: orange;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Styles */
+form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Heading Styles */
+h1 {
+  text-align: center;
+  color: #333;
+  animation: fadeIn 1s ease-in;
+}
+
+h3 {
+  text-align: center;
+  color: #007bff;
+}
+
+/* Label Styles */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+/* Focus and Validation Styles */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input:invalid {
+  border-color: #dc3545;
+}
+
+input:valid {
+  border-color: #28a745;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Card Styles */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+/* Additional Heading Styles */
+h2 {
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Contact Details */
+.contact-details {
+  text-align: left;
+}
+
+/* Link styling */
+a {
+  color: #ff7e5f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  form {
+    padding: 10px;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .card {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .description,
+  .contact-details {
+    font-size: 0.85rem;
+  }
+
+  iframe {
+    height: 150px;
+  }
+}
+
+/* Heading Animation */
+.first-heading {
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem;
+  color: #4A90E2;
+  text-align: center;
+  margin: 20px 0;
+  animation: fadeInUp 1s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
